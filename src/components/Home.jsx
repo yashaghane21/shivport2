@@ -18,7 +18,7 @@ const Home = () => {
         <h3 className='mt-2 text-3xl'>  Graphic Designer</h3>
         <p className='mt-2'>Hello I am Passionate <span className='text-cyan-500'>Graphic Designer </span>Having a Large Skill Set ,<br />I Specailize in Creating visually Captivating Designs.     </p>
 
-        <div className='flex items-center justify-center mt-5 space-x-3 h-5 rounded-3xl hover:text-red-300 '>
+        <div className='flex items-center justify-center mt-5 space-x-3 h-5 rounded-3xl hover:text-red-500 '>
           <a href='https://www.facebook.com/shivaji.sable1'><FaFacebook /></a>
           <a href='https://www.instagram.com/shivaji_sable20/'><FaInstagram /></a>
 
