@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from "react-scroll"
+import { Link } from "react-scroll";
+
 
 
 
@@ -20,14 +21,19 @@ const Nav = () => {
                 </li>
 
                 <li className='x-6 hover:text-cyan-600 ml-4'>
-                    <Link to='myp' smooth={true} duration={500}>Projeects</Link>
+                    <Link to='myp' smooth={true} duration={500}>Projects</Link>
                 </li>
 
 
                 <li className='x-6 hover:text-cyan-600'>
-                    <Link to='skills' smooth={true} duration={500}>Skills</Link>
+                    <Link to='skils' smooth={true} duration={500}>Skills</Link>
                 </li>
+              
 
+                <li className='x-6 hover:text-cyan-600'>
+                <Link to='lg' smooth={true} duration={500}>Login</Link>
+                </li>
+              
 
 
 

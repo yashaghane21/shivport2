@@ -11,7 +11,7 @@ import f from  "../images/f.jpg"
 const Myprojects = () => {
   return (
     <>
-      <div name="myp"className=' bg-slate-950 w-full'>
+      <div name="myp" className=' bg-slate-950 w-full'>
         <div className='text-cyan-500 text-center font-sans font-bold text-4xl '>
           <h2 className=''>My Projects</h2>
         </div>

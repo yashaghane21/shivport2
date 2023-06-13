@@ -5,18 +5,19 @@ import Myprojects from './components/Myprojects'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
 import Nav from "./components/Nav"
+import Login from "./components/Login"
 
 
 const App = () => {
   return (
     <div className='bg-slate-950 '>
    <div>
-  
-  <Nav />
+     <Nav />
+
     <Home />
-    
-    < Myprojects />
+   < Myprojects />
     <Skills />
+    <Login />
     <Footer />
      
 </div>
