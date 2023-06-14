@@ -6,7 +6,7 @@ import Skills from './components/Skills'
 import Footer from './components/Footer'
 import Nav from "./components/Nav"
 import Login from "./components/Login"
-
+import Contact from './components/Contact'
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
    < Myprojects />
     <Skills />
     <Login />
+    <Contact />
     <Footer />
      
 </div>

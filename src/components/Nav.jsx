@@ -35,7 +35,9 @@ const Nav = () => {
                 </li>
               
 
-
+                <li className='x-6 hover:text-cyan-600'>
+                <Link to='contact' smooth={true} duration={500}>Contact</Link>
+                </li>
 
 
             </ul>
