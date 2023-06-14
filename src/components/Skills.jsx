@@ -7,7 +7,7 @@ import PS from "../assets/PS1.png"
 const Skills = () => {
   return ( 
     <>
-    <div  name="skils" className='bg-slate-950 h-screen text-cyan-500 p-5 h-full gap-4  text-center font-sans text-4xl font-bold  max-w-full'>
+    <div  name="skils" className='bg-slate-950 h-screen text-cyan-500 p-5  gap-4  text-center font-sans text-4xl font-bold  max-w-full'>
        <h2>My skills</h2>
     
     <div className='mt-5 space-x-8 rounded-md  overflow-scroll flex md:overflow-scroll w-full '> 
@@ -24,4 +24,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Skills 
