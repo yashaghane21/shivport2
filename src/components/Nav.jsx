@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from "react-scroll";
-
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 
 
@@ -12,34 +12,34 @@ const Nav = () => {
             <ul className=" text-white flex items-center gap-1 py-2 text-sm md:text-lg ml-2 font-sans font-bold space-x-4 pr-2  ">
 
                 <li className='x-6 font-mono hover:text-orange-400' >
+                <RouterLink to="/" >  shivaji</RouterLink>
 
-                    shivaji
+                  
                 </li>
 
                 <li className='x-6 hover:text-cyan-600 ml-2'>
-                    <Link to='home' smooth={true} duration={500}>Home</Link>
+                    <ScrollLink to='home' smooth={true} duration={500}>Home</ScrollLink>
                 </li>
 
                 <li className='x-6 hover:text-cyan-600 ml-4'>
-                    <Link to='myp' smooth={true} duration={500}>Projects</Link>
+                    <ScrollLink to='myp' smooth={true} duration={500}>Projects</ScrollLink>
                 </li>
 
 
                 <li className='x-6 hover:text-cyan-600'>
-                    <Link to='skils' smooth={true} duration={500}>Skills</Link>
+                    <ScrollLink to='skils' smooth={true} duration={500}>Skills</ScrollLink>
                 </li>
               
 
-                <li className='x-6 hover:text-cyan-600'>
-                <Link to='lg' smooth={true} duration={500}>Login</Link>
-                </li>
-
+            
                 
                 <li className='x-6 hover:text-cyan-600'>
-                <Link to='contact' smooth={true} duration={500}>Contact</Link>
+                <ScrollLink to='contact' smooth={true} duration={500}>Contact</ScrollLink>
                 </li>
               
-
+                <li className='x-6 hover:text-cyan-600'>
+                <RouterLink to="/msg" >Message</RouterLink>
+                </li>
                
 
             </ul>

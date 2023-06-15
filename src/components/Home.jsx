@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <div name="home" className='h-full'>
       <div className='text-center font-sans text-white mt-20'>
-        <h2 className='font-bold text-5xl  text-teal-600'>Shivaji Sable</h2>
-        <h3 className='mt-2 text-4xl'>  Graphic Designer</h3>
-        <p className='mt-2 '>Hello I am Passionate <span className='text-cyan-500'>Graphic Designer </span>Having a Large Skill Set ,<br />I Specailize in Creating visually Captivating Designs.     </p>
+        <h2 className='font-bold text-4xl  text-teal-600'>Shivaji Sable</h2>
+        <h3 className='mt-2 text-2xl'>  Graphic Designer</h3>
+        <p className='mt-2 p-4 '>Hello I am Passionate <span className='text-cyan-500'>Graphic Designer </span>Having a Large Skill Set ,<br />I Specailize in Creating visually Captivating Designs.     </p>
 
         <div className='flex items-center justify-center mt-5 space-x-3 h-5 rounded-3xl hover:text-blue-800 '>
           <a href='https://www.facebook.com/shivaji.sable1'><FaFacebook /></a>

@@ -1,25 +1,32 @@
 import React from 'react'
-import Home from "./components/Home"
-import Myprojects from './components/Myprojects'
-
-import Skills from './components/Skills'
-import Footer from './components/Footer'
+import parent from "./components/Parent"
+import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Nav from "./components/Nav"
 import Login from "./components/Login"
-import Contact from './components/Contact'
+import Messages from './components/Messages'
 
 const App = () => {
   return (
     <div className='bg-slate-950 '>
    <div>
+   
+     <BrowserRouter>
      <Nav />
+     <Routes>
+     <Route exact path='/msg'  element={<Messages />} /> 
+     <Route exact path='/Login'  element={<Login/>} />
+     <Route exact path='/' Component={parent}  />
+     </Routes>
+     </BrowserRouter>
 
-    <Home />
-   < Myprojects />
-    <Skills />
-    <Login />
-    <Contact />
-    <Footer />
+ <BrowserRouter>
+ <Routes>
+
+
+ </Routes>
+
+ </BrowserRouter>
+
      
 </div>
     </div>

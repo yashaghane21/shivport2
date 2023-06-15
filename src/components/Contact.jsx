@@ -21,7 +21,7 @@ const Contact = () => {
   const handlesubmit = (e) => {
     e.preventDefault();
     try {
-      const { data } = axios.post("http://localhost:5000/api/about", {
+      const { data } = axios.post("https://shivbackend4.onrender.com/api/about", {
 
         name: datta.Name,
         email: datta.Email,
@@ -41,7 +41,7 @@ const Contact = () => {
   return (
     <div name="contact">
       <div className='text-center text-5xl font-bold  font-serif  mt-20 '>
-        <h3 className='text-white'>Contact Me</h3>
+        <h3 className='text-cyan-500'>Contact Me</h3>
         </div>
 
       <div className='container grid-flow-col flex items-center justify-center  h-screen'>
@@ -74,7 +74,7 @@ const Contact = () => {
             }} />
 
           </div>
-          <div className='flex items-center justify-center text-white font-sans bg-cyan-500 hover:bg-slate-950 hover:text-white  hover:border-2 p-2'>
+          <div className='flex items-center py-1 mt-2 px-3 rounded justify-center text-white font-sans bg-cyan-500 hover:bg-slate-950 hover:text-white  hover:border-2 p-2'>
             <button>Send </button>
 
           </div>

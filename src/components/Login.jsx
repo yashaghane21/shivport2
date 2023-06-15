@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from "axios"
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
-
+     const navigate =useNavigate()
     const [pass, setpass] = useState("")
 
     const [name, setname] = useState("")
@@ -19,7 +20,7 @@ const Login = () => {
 
         e.preventDefault();
         try {
-            const { data } = await axios.post("http://localhost:5000/api/login", {
+            const { data } = await axios.post("https://shivbackend4.onrender.com/api/login", {
 
                 Username: dataa.Username,
                 password: dataa.password
@@ -28,6 +29,7 @@ const Login = () => {
             if (data.success) {
                 localStorage.setItem("userid", data?.user._id)
                 alert("login succsefully");
+                navigate("/msg")
 
             }
             else {
@@ -41,7 +43,7 @@ const Login = () => {
 
 
     return (
-        <div name="lg" className=' flex justify-center items-center bg-slate-950 text-white sm:h-screen md:h-screen mt-5'>
+        <div name="lg" className=' flex justify-center items-center bg-slate-950 text-white h-screen md:h-screen mt-5'>
             <div className='sm:w-1/6 h-1/4 md:w-4/6 flex justify-center items-center'>
 
                 <form method='post' className=' p-4 border-2 w-2/3 flex justify-center flex-col items-center' onSubmit={handlesubmit} >
