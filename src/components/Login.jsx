@@ -1,4 +1,5 @@
 import React from 'react'
+import {toast} from "react-toastify"
 import { useState } from 'react'
 import axios from "axios"
 import { useNavigate } from 'react-router-dom'
@@ -28,7 +29,7 @@ const Login = () => {
             console.log("Ef")
             if (data.success) {
                 localStorage.setItem("userid", data?.user._id)
-                alert("login succsefully");
+                alert("login Succesfully")
                 navigate("/msg")
 
             }
