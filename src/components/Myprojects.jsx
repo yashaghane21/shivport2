@@ -15,7 +15,7 @@ const Myprojects = () => {
         <div className='text-cyan-500 text-center font-sans font-bold text-4xl '>
           <h2 className=''>My Projects</h2>
         </div>
-        <div className='mt-5 p-5 space-x-8 rounded-lg flex  max-w-sm  overflow-scroll md:overflow-auto md:max-w-md  '>
+        <div className='mt-5 p-5 space-x-8 rounded-lg flex  max-w-sm  overflow-x-auto md:max-w-md  '>
        
         
           <img src={a}/>
